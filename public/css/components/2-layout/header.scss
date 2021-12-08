@@ -1,0 +1,64 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 30px 0;
+  background: rgba($color: $gray-light, $alpha: 0.1);
+  @include transition;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+      display: inline-block;
+      width: 305px;
+      &.nav__inner-link {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &.sticky {
+    background: $secondary-light;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@mixin header-xxlg-xxxlg {
+  .header {
+    padding: 15px 0;
+  }
+}
+@mixin header-xlg-xxlg {
+  .header {
+    &__inner {
+      &-logo {
+        width: 200px;
+      }
+    }
+  }
+}
+.anchorPoint {
+  position: relative;
+  top: -120px;
+  &.footerAnchor {
+    top: -90vh;
+  }
+}
+@mixin header-sm-md {
+  .header {
+    &__inner {
+      &-logo {
+        width: 160px;
+      }
+    }
+  }
+}

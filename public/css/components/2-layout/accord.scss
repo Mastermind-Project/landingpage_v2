@@ -1,0 +1,118 @@
+.accord {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__inner {
+    background: $white;
+    border: 1px solid $white;
+    box-sizing: border-box;
+    box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.05);
+    border-radius: 25px;
+    @include transition;
+
+    &-btn {
+      padding: 50px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 162%;
+      color: $black-text;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      box-shadow: 45px 43px 183px rgba(27, 49, 66, 0.13);
+      cursor: pointer;
+      border-radius: 25px;
+      text-align: left;
+      img {
+        @include transition;
+        pointer-events: none;
+        margin-left: 10px;
+      }
+      &.active {
+        img {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    &-para {
+      padding: 0 50px;
+
+      max-height: 0;
+      overflow: hidden;
+      @include transition;
+      p {
+        text-align: left;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 32px;
+        color: rgba(71, 71, 73, 0.82);
+        max-width: 1100px;
+      }
+      &.active {
+        max-height: 500px;
+        padding: 45px 50px;
+      }
+    }
+  }
+}
+@mixin accord-xlg-xxlg {
+  .accord {
+    &__inner {
+      &-btn {
+        padding: 35px;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      &-para {
+        padding: 0 35px;
+        &.active {
+          padding: 15px 35px;
+        }
+      }
+    }
+  }
+}
+@mixin accord-md-lg {
+  .accord {
+    margin-bottom: 15px;
+    &__inner {
+      &-btn {
+        padding: 20px;
+        font-size: 20px;
+        line-height: 24px;
+        img {
+          width: 12px;
+        }
+      }
+      &-para {
+        padding: 0 20px;
+        p {
+          font-size: 14px;
+          line-height: 24px;
+        }
+        &.active {
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
+}
+@mixin accord-sm-md {
+  .accord {
+    &__inner {
+      &-btn {
+        font-size: 16px;
+      }
+      &-para {
+        padding: 0 20px;
+        &.active {
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
+}

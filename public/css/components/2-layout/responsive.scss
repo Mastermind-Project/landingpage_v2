@@ -1,0 +1,189 @@
+// 1480px start
+@include xxlg-xxxlg {
+  @include header-xxlg-xxxlg;
+  @include nav-xxlg-xxxlg;
+  @include manage-xxlg-xxxlg;
+  @include mission-xxlg-xxxlg;
+}
+// 1480px end
+// 1380px start
+@include xlg-xxlg {
+  .button {
+    font-size: 16px;
+    line-height: 20px;
+    &.link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 54px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 58px;
+    span {
+      top: -30px;
+      font-size: 78px;
+    }
+  }
+  h3 {
+    font-size: 38px;
+    line-height: 48px;
+    &.title-about {
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      &:after {
+        width: 85px;
+      }
+    }
+    &.dis {
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
+  h4 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  h5 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    &.big {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &.mid {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &.sm {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &.xsm {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  ul {
+    li {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include accord-xlg-xxlg;
+
+  // index
+  @include intro-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include roadmap-xlg-xxlg;
+}
+// 1380px end
+// 1240px start
+@include lg-xlg {
+  .auto__container {
+    padding: 0 20px;
+  }
+  @include nav-lg-xlg;
+  @include faq-xlg-xxlg;
+  @include distribution-xlg-xxlg;
+}
+// 1240px end
+// 1024px start
+@include md-lg {
+  @include nav-md-lg;
+  @include accord-md-lg;
+  @include footer-md-lg;
+
+  // index
+  @include intro-md-lg;
+  @include about-md-lg;
+  @include manage-md-lg;
+  @include distribution-md-lg;
+  @include roadmap-md-lg;
+}
+// 1024px end
+// 768px start
+@include sm-md {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+    span {
+      top: -15px;
+      font-size: 64px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+    &.title-about {
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      &:after {
+        width: 75px;
+      }
+    }
+    &.dis {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    &.big {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &.mid {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @include header-sm-md;
+  @include nav-sm-md;
+
+  @include intro-sm-md;
+
+  @include accord-sm-md;
+
+  @include mission-sm-md;
+  @include roadmap-sm-md;
+  @include distribution-sm-md;
+}
+// 768px end
+// 600px start
+@include xsm-sm {
+  @include intro-xsm-sm;
+  @include mission-xsm-sm;
+  @include about-xsm-sm;
+  @include manage-xsm-sm;
+  @include distribution-xsm-sm;
+  @include roadmap-xsm-sm;
+}
+
+// 600px end
+@mixin extra {
+  @include distribution-extra;
+}
