@@ -14,7 +14,7 @@ export default function Graph(props) {
     datasets: [
       {
         label: ["Locked liquidity", "Presale", "Marketing", "Development"],
-        data: [60, 4, 16, 20],
+        data: [45, 45, 5, 5],
         backgroundColor: ["#0081FF", "#8291A9", "#22CCE2", "#FDBF5E"],
         hoverOffset: 20,
       },

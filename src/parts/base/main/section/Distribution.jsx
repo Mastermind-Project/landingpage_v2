@@ -18,11 +18,11 @@ export default function Distribution() {
         <div className="distribution__inner">
           <div className="distribution__inner-chart">
             <div className="distribution__inner-chart-header">
-              <p>Top Performance</p>
+              <p>Tokenomics</p>
               <div className="dropdown">
                 <div className="dropdown__btn">
-                  Weekly
-                  <img src="images/icons/arrow-down.svg" alt="" />
+                  Metrics
+                  {/* <img src="images/icons/arrow-down.svg" alt="" /> */}
                 </div>
                 <div className="dropdown__content">
                   <div className="dropdown__content-btn">Dayly</div>

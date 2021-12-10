@@ -14,7 +14,7 @@ export default function Manage() {
               data-wow-duration=".6s"
               data-wow-delay=".2s"
             >
-              Contract Management
+              Financial Security
             </h3>
             <p
               className="mid wow fadeInUpSmall"
