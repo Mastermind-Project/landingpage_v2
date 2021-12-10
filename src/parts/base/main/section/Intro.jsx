@@ -29,9 +29,9 @@ export default function Intro() {
               <a href="#" className="button primary">
                 Whitepaper
               </a>
-              <a href="#" className="button secondary">
+              {/* <a href="#" className="button secondary">
                 Refer & Earn Program
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="intro__inner-image wow fadeIn"

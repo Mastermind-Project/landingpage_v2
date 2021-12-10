@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import toast, { Toaster } from 'react-hot-toast';
 export default function Header() {
   const [menu, setMenu] = useState(false);
   var links = document.querySelectorAll(".nav__inner-link");
@@ -46,6 +46,41 @@ export default function Header() {
       body.classList.remove("active");
     });
   }
+
+  const tOptions = {
+    error: {
+      style: {
+        background: '#ff1a1a',
+        color: '#ffffff',
+        paddingRight: '30px',
+        paddingLeft: '30px',
+        fontWeight: '500',
+        fontSize: '18px'
+      }
+    }
+  };
+
+  const toastOptions = {
+    duration: 4000,
+    position: 'top-center',
+    // Styling
+    style: {},
+    className: '',
+    // Custom Icon
+    icon: '👏',
+    // Change colors of success/error/loading icon
+    iconTheme: {
+      primary: '#000',
+      secondary: '#fff',
+    },
+    // Aria   
+    ariaProps: {
+      role: 'status',
+      'aria-live': 'polite',
+    },
+  };
+  const notify = () => toast.error('Coming soon');
+
   return (
     <header className="header" id="header">
       <div className="auto__container">
@@ -76,10 +111,10 @@ export default function Header() {
               <a href="#contact" className="nav__inner-link">
                 Contact
               </a>
-              <a href="#" className="nav__inner-uniq">
-                presale
+              <a href="javascript:void(0)" style={{ marginRight: "6px" }} className="button link" onClick={notify}>
+                Use Ecom
               </a>
-              <a href="#" className="button link">
+              <a href="javascript:void(0)" className="button link" onClick={notify}>
                 Use Swap
               </a>
             </div>
@@ -93,6 +128,7 @@ export default function Header() {
           ></div>
         </div>
       </div>
+      <Toaster toastOptions={tOptions} />
     </header>
   );
 }
