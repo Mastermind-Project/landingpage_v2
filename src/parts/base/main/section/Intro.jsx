@@ -26,12 +26,9 @@ export default function Intro() {
               data-wow-duration=".6s"
               data-wow-delay=".6s"
             >
-              <a href="#" className="button primary">
+              <a href="https://drive.google.com/file/d/1zl__qDgow9VZQ-LV27SFpLD-AVTzT7Z4/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button primary">
                 Whitepaper
               </a>
-              {/* <a href="#" className="button secondary">
-                Refer & Earn Program
-              </a> */}
             </div>
           </div>
           <div className="intro__inner-image wow fadeIn"

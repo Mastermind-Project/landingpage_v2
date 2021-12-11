@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 export default function Header() {
   const [menu, setMenu] = useState(false);
   var links = document.querySelectorAll(".nav__inner-link");
@@ -60,25 +60,7 @@ export default function Header() {
     }
   };
 
-  const toastOptions = {
-    duration: 4000,
-    position: 'top-center',
-    // Styling
-    style: {},
-    className: '',
-    // Custom Icon
-    icon: '👏',
-    // Change colors of success/error/loading icon
-    iconTheme: {
-      primary: '#000',
-      secondary: '#fff',
-    },
-    // Aria   
-    ariaProps: {
-      role: 'status',
-      'aria-live': 'polite',
-    },
-  };
+  
   const notify = () => toast.error('Coming soon');
 
   return (
