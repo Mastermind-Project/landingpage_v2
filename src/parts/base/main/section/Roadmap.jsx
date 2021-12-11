@@ -38,7 +38,7 @@ export default function Roadmap() {
                 <img src="images/roadmap/firstShape.svg" alt="" />
               </div>
               <div className="roadmap__inner-column">
-                <div className="roadmap__inner-column-title">Q1 2021</div>
+                <div className="roadmap__inner-column-title">Q3 2021</div>
                 <div className="roadmap__inner-column-content">
                   <div className="roadmap__inner-column-content-title">
                     Development
@@ -59,10 +59,10 @@ export default function Roadmap() {
                 <img src="images/roadmap/secondShape.svg" alt="" />
               </div>
               <div className="roadmap__inner-column">
-                <div className="roadmap__inner-column-title">Q2 2021</div>
+                <div className="roadmap__inner-column-title">Q4 2021</div>
                 <div className="roadmap__inner-column-content">
                   <div className="roadmap__inner-column-content-title">
-                    Merketing
+                    Marketing
                   </div>
                   <ul>
                     <li>Referal programm marketing</li>
@@ -83,7 +83,7 @@ export default function Roadmap() {
                 <img src="images/roadmap/thirdShape.svg" alt="" />
               </div>
               <div className="roadmap__inner-column">
-                <div className="roadmap__inner-column-title">Q3 2021</div>
+                <div className="roadmap__inner-column-title">Q4 2021</div>
                 <div className="roadmap__inner-column-content first">
                   <div className="roadmap__inner-column-content-title">
                     Development
@@ -114,7 +114,7 @@ export default function Roadmap() {
                 <img src="images/roadmap/fourthShape.svg" alt="" />
               </div>
               <div className="roadmap__inner-column">
-                <div className="roadmap__inner-column-title">Q3 2021</div>
+                <div className="roadmap__inner-column-title">Q1 2022</div>
                 <div className="roadmap__inner-column-content first">
                   <div className="roadmap__inner-column-content-title">
                     REWARDS

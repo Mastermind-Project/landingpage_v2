@@ -1,6 +1,24 @@
 import React from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Product() {
+
+  const notify = () => toast.error('Coming soon');
+
+
+  const tOptions = {
+    error: {
+      style: {
+        background: '#ff1a1a',
+        color: '#ffffff',
+        paddingRight: '30px',
+        paddingLeft: '30px',
+        fontWeight: '500',
+        fontSize: '18px'
+      }
+    }
+  };
+
   return (
     <section className="products">
       <div className="about">
@@ -26,7 +44,8 @@ export default function Product() {
                 holders that has contributed to the MMD community
               </p>
               <a
-                href="#"
+                href="javascript:void(0)"
+                onClick={notify}
                 className="button primary wow fadeInUpSmall"
                 data-wow-duration=".6s"
                 data-wow-delay=".6s"
@@ -74,7 +93,8 @@ export default function Product() {
                 intermediary.
               </p>
               <a
-                href="#"
+                href="javascript:void(0)"
+                onClick={notify}
                 className="button primary wow fadeInUpSmall"
                 data-wow-duration=".6s"
                 data-wow-delay=".6s"
@@ -108,7 +128,8 @@ export default function Product() {
                 with the use of MMD token as the medium of exchange.
               </p>
               <a
-                href="#"
+                href="javascript:void(0)"
+                onClick={notify}
                 className="button primary wow fadeInUpSmall"
                 data-wow-duration=".6s"
                 data-wow-delay=".6s"
@@ -124,6 +145,7 @@ export default function Product() {
           </div>
         </div>
       </div>
+      <Toaster toastOptions={tOptions} />
     </section>
   );
 }

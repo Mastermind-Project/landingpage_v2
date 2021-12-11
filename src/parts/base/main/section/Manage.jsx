@@ -9,20 +9,7 @@ export default function Manage() {
       <div className="auto__container">
         <div className="manage__inner">
           <div className="manage__inner-content">
-            <h3
-              className="dark wow fadeInUpSmall"
-              data-wow-duration=".6s"
-              data-wow-delay=".2s"
-            >
-              Financial Security
-            </h3>
-            <p
-              className="mid wow fadeInUpSmall"
-              data-wow-duration=".6s"
-              data-wow-delay=".4s"
-            >
-              Have full visibility & control of your contracts
-            </p>
+            
             <div
               className="manage__inner-row wow fadeInUpSmall"
               data-wow-duration=".6s"
